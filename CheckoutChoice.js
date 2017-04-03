@@ -48,7 +48,7 @@ function list(filter) {
         if (filter) {
             var filterOption = {
                 where: {
-                    CheckoutChoiceID: filter 
+                    CheckoutID: filter 
                 } 
             };
             return CheckoutChoice.findAndCountAll(filterOption);
